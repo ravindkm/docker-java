@@ -4,9 +4,9 @@ node{
 	}
 	stage('Mvn Package'){
 		def mvnHome = tool name: 'maven-3',type:'maven'
-		
+		def javaHome = tool name: 'java8', type: 'jdk'
 		def mvnCMD = "${mvnHome}/bin/mvn"
-		def JAVA_HOME = "/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.242.b08-0.amzn2.0.1.x86_64"
+		def JAVA_HOME = "${javaHome}"
 		sh "${mvnCMD} -f WelcomeDocker/pom.xml clean package"
 	}
 }
