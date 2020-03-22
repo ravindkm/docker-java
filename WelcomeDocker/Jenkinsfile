@@ -1,0 +1,8 @@
+node{
+	stage('SCM Checkout'){
+		git 'https://github.com/ravindkm/docker-java.git'
+	}
+	stage('Mvn Package'){
+		sh 'mvn clean package'
+	}
+}
