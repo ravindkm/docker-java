@@ -57,6 +57,14 @@
 		          <target>1.8</target>
 		        </configuration>
 			</plugin>
+			<plugin>
+			    <artifactId>maven-compiler-plugin</artifactId>
+			    <version>3.5.2</version>
+			    <configuration>
+			        <fork>true</fork>
+			        <executable>/usr/bin/java/bin/javac</executable>
+			    </configuration>
+			</plugin>
 		</plugins>
 	</build>
 
