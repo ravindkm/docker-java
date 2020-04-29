@@ -16,7 +16,7 @@ public class WelcomeController {
 	
 	@GetMapping("/welcome")
 	public String helloWorld() {
-		return "Hello world";
+		return "Hello world Message";
 	}
 	
 	@GetMapping("/test-world")
