@@ -19,8 +19,8 @@ public class WelcomeController {
 		return "Hello world";
 	}
 	
-	@GetMapping("/bye")
+	@GetMapping("/test-world")
 	public String byeWorld() {
-		return "Test Bye world";
+		return "Test world";
 	}
 }
